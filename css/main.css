@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
@@ -55,54 +56,6 @@ input,
 select,
 textarea {
   font-family: inherit;
-}
-
-@font-face {
-  font-family: 'Jost';
-  src: local("Jost Light"), local("Jost-Light"), url("../fonts/jost/Jost-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Jost';
-  src: local("Jost Regular"), local("Jost-Regular"), url("../fonts/jost/Jost-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Jost';
-  src: local("Jost Medium"), local("Jost-Medium"), url("../fonts/jost/Jost-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Jost';
-  src: local("Jost SemiBold"), local("Jost-SemiBold"), url("../fonts/jost/Jost-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Jost';
-  src: local("Jost Bold"), local("Jost-Bold"), url("../fonts/jost/Jost-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat/Montserrat-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
 
 :root {
@@ -1648,14 +1601,12 @@ body {
   z-index: 10;
   background-color: rgba(40, 40, 46, 0.96);
   padding: 2.5rem 3.125rem;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
 }
 
 .quality__bottom_wrap .item:hover {
   z-index: 11;
   background-color: #34343D;
+  width: 25.8125rem;
 }
 
 .quality__bottom_wrap .item:hover .item__image .line {
@@ -1686,6 +1637,9 @@ body {
   color: #8E8E93;
   margin-top: 0.9375rem;
   display: none;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
 }
 
 .quality__bottom_wrap .item.active .item__image .line {
@@ -2282,6 +2236,11 @@ body {
   display: none;
 }
 
+.map__bottom .item.active {
+  width: 25.8125rem;
+  z-index: 11;
+}
+
 .map__bottom .item.active .item__image .line {
   opacity: 1;
 }
@@ -2292,7 +2251,7 @@ body {
 
 .map__bottom .item_1 {
   top: 29.375rem;
-  left: 11.5rem;
+  right: 48.375rem;
   width: 15.625rem;
 }
 
@@ -2303,7 +2262,7 @@ body {
 
 .map__bottom .item_2 {
   top: 2.375rem;
-  right: 5.125rem;
+  left: 50.9375rem;
   padding: 1.875rem 3.125rem;
   width: 18.375rem;
 }
