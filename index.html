@@ -12,7 +12,8 @@
       <div class="header__gradient"></div>
       <div class="header__buffer"></div>
       <div class="header__top">
-        <div class="container"><a class="logo-fixed" href="#"><img src="./img/logo_black.svg" alt="image"></a>
+        <div class="container">
+          <button class="burger" type="button"><span class="line"></span><span class="line"></span><span class="line"></span></button><a class="logo-fixed" href="#"><img src="./img/logo_black.svg" alt="image"></a>
           <nav class="header__top_nav">
             <ul>
               <li><a href="#link_info">О проекте</a></li>
@@ -54,10 +55,10 @@
         </div>
       </div>
     </header>
-    <section class="info" id="link_info">
+    <section class="info animate-sect" id="link_info" data-scroll-block>
       <div class="container">
         <div class="info__left"><span class="subtitle">О проекте</span>
-          <h2 class="sect-title-40">Клубный посёлок <span>риверстоун</span></h2>
+          <h2 class="sect-title-40">Клубный посёлок <span>Riverstone</span></h2>
           <p class="sect-text">КП Riverstone расположился у подножья горных хребтов на земельном участке с прямым видом на озера с одной стороны и заснеженные вершины с другой. Архитектурный код поселка проповедует стандарты выдержанного премиум-класса, сочетая в себе высокотехнологичные строительные решения и экстерьерный минимализм. Концептуальной особенностью проекта является его географическая приватность и природная ориентированность. </p>
           <p class="sect-text">Идеальная трасса ведёт от посёлка<br> к горно-лыжным комплексам зимой<br> и к морским-оздоровительным центрам летом.</p>
         </div>
@@ -69,7 +70,7 @@
         </div>
       </div>
     </section>
-    <section class="tab_info" style="background-image: url(./img/section3/conceptuality_bg.jpg)">
+    <section class="tab_info animate-sect" style="background-image: url(./img/section3/conceptuality_bg.jpg)">
       <div class="container">
         <div class="tab_info__left">
           <div class="tab_info__item tab_info__tab1 active">
@@ -157,7 +158,7 @@
         </div>
       </div>
     </section>
-    <section class="info_company">
+    <section class="info_company animate-sect">
       <div class="container">
         <div class="info_company__top">
           <div class="info_company__top_left"><svg width="223" height="274" viewBox="0 0 223 274" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,7 +218,7 @@
         </div>
       </div>
     </section>
-    <section class="quality" id="link_quality">
+    <section class="quality animate-sect" id="link_quality" data-scroll-block>
       <div class="quality__top">
         <div class="container">
           <h3 class="sect-title-40"><span>качество</span> и материалы</h3>
@@ -263,7 +264,7 @@
 </defs>
 </svg>
               </div>
-              <div class="item__title">Окна Shuko</div>
+              <div class="item__title">Окна Schuco</div>
               <div class="item__descr">До горнолыжного курорта Красная поляна</div>
             </div>
             <div class="item item_3">
@@ -310,7 +311,7 @@
         </div>
       </div>
     </section>
-    <section class="form_present">
+    <section class="form_present animate-sect">
       <div class="container">
         <div class="form_present__left">
           <form class="form_message js_form" action="/">
@@ -341,7 +342,7 @@
         <div class="form_present__right"><img class="lazyload" data-src="./img/section5/book.png" src="#" alt="image"></div>
       </div>
     </section>
-    <section class="layouts" id="link_layouts">
+    <section class="layouts animate-sect" id="link_layouts" data-scroll-block>
       <div class="container">
         <div class="layouts__top">
           <h3 class="sect-title-40">Планировки</h3>
@@ -399,7 +400,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery" id="link_gallery">
+    <section class="gallery animate-sect" id="link_gallery" data-scroll-block>
       <div class="gallery__top">
         <div class="container">
           <h4 class="sect-title-40">Галерея</h4>
@@ -461,7 +462,7 @@
         </div>
       </div>
     </section>
-    <div class="map" id="link_map">
+    <div class="map animate-sect" id="link_map" data-scroll-block>
       <div class="map__top">
         <div class="container">
           <div class="item">
@@ -569,7 +570,7 @@
         </div>
       </div>
     </div>
-    <section class="record_form">
+    <section class="record_form animate-sect">
       <div class="container">
         <div class="record_form__left">
           <form class="form_message js_form" action="/">
@@ -599,7 +600,7 @@
         <div class="record_form__right"><img class="lazyload" data-src="./img/section9/right_bg.jpg" src="#" alt="image"></div>
       </div>
     </section>
-    <section class="investment" id="link_investment">
+    <section class="investment animate-sect" id="link_investment" data-scroll-block>
       <div class="container">
         <div class="investment__top">
           <h4 class="sect-title-40">Инвестиции</h4>
@@ -625,23 +626,23 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer animate-sect">
       <div class="footer__top"><img class="lazyload" data-src="./img/footer_bg.jpg" src="#" alt="image">
         <div class="container">
           <div class="footer__top_nav">
             <ul>
-              <li><a href="#">О проекте</a></li>
-              <li><a href="#">Качество и материалы</a></li>
-              <li><a href="#">Планировки</a></li>
-              <li><a href="#">Галерея</a></li>
-              <li><a href="#">Расположение</a></li>
-              <li><a href="#">Инвестиции</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#link_info">О проекте</a></li>
+              <li><a href="#link_quality">Качество и материалы</a></li>
+              <li><a href="#link_layouts">Планировки</a></li>
+              <li><a href="#link_gallery">Галерея</a></li>
+              <li><a href="#link_map">Расположение</a></li>
+              <li><a href="#link_investment">Инвестиции</a></li>
+              <li><a href="#link_contact">Контакты</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom" id="link_contact">
+      <div class="footer__bottom" id="link_contact" data-scroll-block>
         <div class="container">
           <div class="footer__bottom_left"><a class="item" href="tel:79180991212">
               <div class="item__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -722,7 +723,7 @@
       </div>
     </div>
     <div class="modal_overlay" id="modal_success">
-      <div class="modal_wrap">
+      <div class="modal_wrap modal_success">
         <button class="modal_wrap__close" type="button"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L16.549 16.92" stroke="#A8906D"/>
 <path d="M1.45117 17L17.0002 1.07999" stroke="#A8906D"/>
@@ -735,6 +736,8 @@
     <script src="./libs/lazysizes/lazysizes.min.js" defer></script>
     <script src="./libs/tingle/tingle.min.js" defer></script>
     <script src="./libs/inputMask/inputmask.min.js" defer></script>
+    <script src="./libs/scrollreveal/scrollreveal.js" defer></script>
+    <script src="./libs/scrollspy/scrollspy.js" defer></script>
     <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
     <script src="./js/common.js" defer></script>
   </body>

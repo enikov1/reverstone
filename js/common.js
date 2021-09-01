@@ -1,5 +1,49 @@
 'use strict';
 
+
+scrollSpy('nav', {
+    sectionSelector: '[data-scroll-block]',
+    targetSelector: '.header__top_nav a',
+    offset: 400,
+    activeClass: 'active',
+});
+
+// const section = document.querySelectorAll('[data-scroll-block]');
+
+// const sections = {};
+// let i = 0;
+
+// Array.prototype.forEach.call(section, (e) => {
+// 	sections[e.id] = e.offsetTop;
+// });
+
+// window.addEventListener('scroll', () => {
+// 	let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+// 	for (i in sections) {
+// 		if(sections[i] <= scrollPosition) {
+// 			console.log(sections)
+// 			sections[i].querySelector('.active').setAttribute('class', '');
+
+// 			document.querySelector(`a[href*=${i}`).setAttribute('class', 'active');
+
+
+// 		}
+// 	}
+// });
+
+
+const anim_sect = document.querySelectorAll('.animate-sect');
+
+ScrollReveal().reveal(anim_sect, {
+	easing: 'ease-in',
+	duration: 500,
+	reset: true,
+    // useDelay: 'once'
+	// distance: 0
+	// scale: 0.85
+});
+
  const onScrollHeader = () => {
 
  	const header = document.querySelector('.header');
@@ -21,23 +65,23 @@
 
  }
 
- onScrollHeader();
+onScrollHeader();
 
-const header_nav_item = document.querySelectorAll('.header__top_nav a');
+// const header_nav_item = document.querySelectorAll('.header__top_nav a');
 
-header_nav_item.forEach(e => {
-	e.addEventListener('click', function(event) {
-		event.preventDefault();
+// header_nav_item.forEach(e => {
+// 	e.addEventListener('click', function(event) {
+// 		event.preventDefault();
 
-		const li = e.parentNode;
+// 		const li = e.parentNode;
 
-		for (let item of li.parentNode.children) {
-			item.classList.remove('active');
-		}
+// 		for (let item of li.parentNode.children) {
+// 			item.classList.remove('active');
+// 		}
 
-		li.classList.add('active');
-	});
-});
+// 		li.classList.add('active');
+// 	});
+// });
 
  document.querySelectorAll('a[href^="#"').forEach(link => {
 
@@ -150,6 +194,20 @@ const map_wrap_item = document.querySelectorAll('.map__bottom_wrap .item');
 
 if(map_header_item) {
 	map_header_item.forEach((e, i) => {
+		e.addEventListener('mouseover', function(event) {
+			event.preventDefault();
+
+			for (let item of map_wrap_item[i].parentNode.children) {
+				item.classList.remove('active');
+			}
+			
+			map_wrap_item[i].classList.add('active');
+		})
+	});
+}
+
+if(map_wrap_item) {
+	map_wrap_item.forEach((e, i) => {
 		e.addEventListener('mouseover', function(event) {
 			event.preventDefault();
 
@@ -367,7 +425,7 @@ if(js_form) {
 
 const mask_phone = document.querySelectorAll('.js_phone');
 
-const im = new Inputmask("+7 (999) (999)-99-99");
+const im = new Inputmask("+7 (999) 999-99-99");
 if(mask_phone) {
 	mask_phone.forEach(e => {
 		im.mask(e);
