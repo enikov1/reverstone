@@ -9,17 +9,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__top">
+      <div class="header__gradient"></div>
+      <div class="header__buffer"></div>
+      <div class="header__top">
+        <div class="container"><a class="logo-fixed" href="#"><img src="./img/logo_black.svg" alt="image"></a>
           <nav class="header__top_nav">
             <ul>
-              <li><a href="#">О проекте</a></li>
-              <li><a href="#">Качество и материалы</a></li>
-              <li><a href="#">Планировки</a></li>
-              <li><a href="#">Галерея</a></li>
-              <li><a href="#">Расположение</a></li>
-              <li><a href="#">Инвестиции</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#link_info">О проекте</a></li>
+              <li><a href="#link_quality">Качество и материалы</a></li>
+              <li><a href="#link_layouts">Планировки</a></li>
+              <li><a href="#link_gallery">Галерея</a></li>
+              <li><a href="#link_map">Расположение</a></li>
+              <li><a href="#link_investment">Инвестиции</a></li>
+              <li><a href="#link_contact">Контакты</a></li>
             </ul>
           </nav>
           <div class="header__top_contact"><a href="tel:89007777777">8 (900) 777-77-77</a>
@@ -27,7 +29,9 @@
             <div class="bs-overlay"></div>
           </div>
         </div>
-        <div class="header__bottom"><img class="logo" src="./img/logo.svg" alt="logo">
+      </div>
+      <div class="header__bottom">
+        <div class="container"><img class="logo" src="./img/logo.svg" alt="logo">
           <div class="title">riverstone</div>
           <div class="subtitle">клубный закрытый посёлок</div>
           <button class="button-play" type="button" data-video="2pzS_58CuVE" id="header_play"><svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +54,7 @@
         </div>
       </div>
     </header>
-    <section class="info">
+    <section class="info" id="link_info">
       <div class="container">
         <div class="info__left"><span class="subtitle">О проекте</span>
           <h2 class="sect-title-40">Клубный посёлок <span>риверстоун</span></h2>
@@ -213,7 +217,7 @@
         </div>
       </div>
     </section>
-    <section class="quality">
+    <section class="quality" id="link_quality">
       <div class="quality__top">
         <div class="container">
           <h3 class="sect-title-40"><span>качество</span> и материалы</h3>
@@ -337,19 +341,17 @@
         <div class="form_present__right"><img class="lazyload" data-src="./img/section5/book.png" src="#" alt="image"></div>
       </div>
     </section>
-    <section class="layouts">
+    <section class="layouts" id="link_layouts">
       <div class="container">
         <div class="layouts__top">
           <h3 class="sect-title-40">Планировки</h3>
           <div class="sect-tab-button" id="sect-tab-layouts">
-            <button class="item" type="button">0 этаж</button>
             <button class="item active" type="button">1 этаж</button>
             <button class="item" type="button">2 этаж</button>
           </div>
         </div>
         <div class="layouts__bottom">
           <div class="layouts__bottom_left">
-            <div class="layouts_tab_wrap"><img class="lazyload" data-src="./img/section6/tab_2.png" src="#" alt="image"></div>
             <div class="layouts_tab_wrap active"><img class="lazyload" data-src="./img/section6/tab_2.png" src="#" alt="image"></div>
             <div class="layouts_tab_wrap"><img class="lazyload" data-src="./img/section6/tab_3.png" src="#" alt="image"></div>
           </div>
@@ -397,7 +399,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="link_gallery">
       <div class="gallery__top">
         <div class="container">
           <h4 class="sect-title-40">Галерея</h4>
@@ -459,7 +461,7 @@
         </div>
       </div>
     </section>
-    <div class="map">
+    <div class="map" id="link_map">
       <div class="map__top">
         <div class="container">
           <div class="item">
@@ -597,7 +599,7 @@
         <div class="record_form__right"><img class="lazyload" data-src="./img/section9/right_bg.jpg" src="#" alt="image"></div>
       </div>
     </section>
-    <section class="investment">
+    <section class="investment" id="link_investment">
       <div class="container">
         <div class="investment__top">
           <h4 class="sect-title-40">Инвестиции</h4>
@@ -639,7 +641,7 @@
           </div>
         </div>
       </div>
-      <div class="footer__bottom">
+      <div class="footer__bottom" id="link_contact">
         <div class="container">
           <div class="footer__bottom_left"><a class="item" href="tel:79180991212">
               <div class="item__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
