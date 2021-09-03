@@ -15,41 +15,13 @@ scrollSpy('.modal_menu__list', {
     activeClass: 'active',
 });
 
-// const section = document.querySelectorAll('[data-scroll-block]');
-
-// const sections = {};
-// let i = 0;
-
-// Array.prototype.forEach.call(section, (e) => {
-// 	sections[e.id] = e.offsetTop;
-// });
-
-// window.addEventListener('scroll', () => {
-// 	let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-// 	for (i in sections) {
-// 		if(sections[i] <= scrollPosition) {
-// 			console.log(sections)
-// 			sections[i].querySelector('.active').setAttribute('class', '');
-
-// 			document.querySelector(`a[href*=${i}`).setAttribute('class', 'active');
-
-
-// 		}
-// 	}
-// });
-
-
 const anim_sect = document.querySelectorAll('.animate-sect');
 
 ScrollReveal().reveal(anim_sect, {
 	easing: 'ease-in',
 	duration: 500,
 	reset: true,
-	mobile: false,
-    // useDelay: 'once'
-	// distance: 0
-	// scale: 0.85
+	mobile: false
 });
 
  const onScrollHeader = () => {
@@ -75,22 +47,6 @@ ScrollReveal().reveal(anim_sect, {
 
 onScrollHeader();
 
-// const header_nav_item = document.querySelectorAll('.header__top_nav a');
-
-// header_nav_item.forEach(e => {
-// 	e.addEventListener('click', function(event) {
-// 		event.preventDefault();
-
-// 		const li = e.parentNode;
-
-// 		for (let item of li.parentNode.children) {
-// 			item.classList.remove('active');
-// 		}
-
-// 		li.classList.add('active');
-// 	});
-// });
-
  document.querySelectorAll('a[href^="#"').forEach(link => {
 
     link.addEventListener('click', function(e) {
@@ -103,15 +59,8 @@ onScrollHeader();
         let topOffset = 0;
         const elementPosition = scrollTarget.getBoundingClientRect().top;
 
-		// if(window.matchMedia('(max-width: 1200px)').matches === true) {
-			topOffset = header_top_height;
-		// }
+		topOffset = header_top_height;
         const offsetPosition = elementPosition - topOffset;
-
-		// if(modal_menu.classList.contains('active')) {
-		// 	modal_menu.classList.remove('active');
-		// 	button_header_burger.classList.remove('active');
-		// }
 
         window.scrollBy({
             top: offsetPosition,
