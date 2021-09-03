@@ -34,7 +34,7 @@
         <div class="container"><img class="logo" src="./img/logo.svg" alt="logo">
           <div class="title">riverstone</div>
           <div class="subtitle">клубный закрытый посёлок</div>
-          <button class="button-play" type="button" data-video="2pzS_58CuVE" id="header_play"><svg width="100%" height="100%" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="button-play header_play" type="button" data-video="2pzS_58CuVE"><svg width="100%" height="100%" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#button_play1">
 <circle cx="68.5009" cy="67.5145" r="45.8212" fill="#A8906D"/>
 </g>
@@ -43,6 +43,22 @@
 <path d="M65.0508 67.0214V58.1528L77.861 67.0214L65.0508 75.8901V67.0214Z" fill="white"/>
 <defs>
 <filter id="button_play1" x="18.6797" y="17.6934" width="99.6423" height="99.6423" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+</defs>
+</svg>
+          </button>
+          <button class="button-play button-play-mobile header_play" type="button" data-video="2pzS_58CuVE"><svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b)">
+<circle cx="51.0002" cy="49.8317" r="33.9416" fill="#A8906D"/>
+</g>
+<path opacity="0.5" d="M51 0.56152C78.6142 0.561519 101 22.9473 101 50.5615C101 78.1758 78.6142 100.562 51 100.562C23.3858 100.562 0.999999 78.1758 0.999998 50.5615" stroke="#A8906D"/>
+<path d="M48.4453 49.4663V42.897L57.9344 49.4663L48.4453 56.0357V49.4663Z" fill="white"/>
+<defs>
+<filter id="filter0_b" x="13.0586" y="11.8901" width="75.8832" height="75.8832" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
@@ -232,7 +248,7 @@
         </picture>
         <div class="quality__bottom_wrap">
           <div class="container">
-            <div class="item item_1">
+            <div class="item item_1" data-href="quality_bottom_mobile">
               <div class="item__image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="33" cy="33" r="21" fill="#A8906D" fill-opacity="0.6"/>
 <g opacity="0.5" filter="url(#filter0_f)">
@@ -252,7 +268,7 @@
               <div class="item__title">Кровля Braas</div>
               <div class="item__descr">Массивные фасады домов в стиле Райт принято выполнять из натурального камня. Для своих фасадов мы выбрали самую благородную породу травертина, добываемого в карьерах Турции</div>
             </div>
-            <div class="item item_2">
+            <div class="item item_2" data-href="quality_bottom_mobile">
               <div class="item__image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="33" cy="33" r="21" fill="#A8906D" fill-opacity="0.6"/>
 <g opacity="0.5" filter="url(#filter0_f)">
@@ -272,7 +288,7 @@
               <div class="item__title">Окна Schuco</div>
               <div class="item__descr">До горнолыжного курорта Красная поляна</div>
             </div>
-            <div class="item item_3">
+            <div class="item item_3" data-href="quality_bottom_mobile">
               <div class="item__image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="33" cy="33" r="21" fill="#A8906D" fill-opacity="0.6"/>
 <g opacity="0.5" filter="url(#filter0_f)">
@@ -292,7 +308,7 @@
               <div class="item__title">Натуральные HP панели</div>
               <div class="item__descr">До горнолыжного курорта Красная поляна</div>
             </div>
-            <div class="item item_4">
+            <div class="item item_4" data-href="quality_bottom_mobile">
               <div class="item__image"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="33" cy="33" r="21" fill="#A8906D" fill-opacity="0.6"/>
 <g opacity="0.5" filter="url(#filter0_f)">
@@ -315,7 +331,7 @@
           </div>
         </div>
       </div>
-      <div class="quality__bottom_mobile">
+      <div class="quality__bottom_mobile" id="quality_bottom_mobile">
         <div class="title">Фасады</div>
         <p class="sect-text">Массивные фасады домов в стиле Райт принято выполнять из натурального камня. Для своих фасадов мы выбрали самую благородную породу травертина, добываемого в карьерах Турции</p>
       </div>

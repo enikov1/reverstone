@@ -1031,6 +1031,7 @@ body {
   .header__bottom .button-play {
     width: 6.25rem;
     height: 6.25rem;
+    display: none;
   }
   .header__bottom .button-play svg {
     width: 6.25rem;
@@ -1048,6 +1049,16 @@ body {
 
 .header__bottom .button-play:hover .line2 {
   display: block;
+}
+
+.header__bottom .button-play-mobile {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  .header__bottom .button-play-mobile {
+    display: block;
+  }
 }
 
 .header.header-fixed {
