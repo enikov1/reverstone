@@ -336,6 +336,58 @@ menu_mobile_item.forEach(e => {
 	})
 });
 
+const mobile_wrap_layouts = document.querySelectorAll('.layouts_tab_wrap');
+const mobile_sect_tab_button = document.querySelectorAll('.sect-tab-button .item');
+
+mobile_wrap_layouts.forEach(e => {
+	e.addEventListener('touchstart', handleTouchStart, false);
+	e.addEventListener('touchmove', handleTouchMove, false);
+});
+
+
+
+let xDown = null;
+let yDown = null;
+	
+function getTouches(evt) {
+	return evt.touches || evt.originalEvent.touches;
+}
+	
+function handleTouchStart(evt) {
+	const firstTouch = getTouches(evt)[0];
+	xDown = firstTouch.clientX;
+	yDown = firstTouch.clientY;
+}
+	
+function handleTouchMove(evt) {
+	if ( ! xDown || ! yDown ) return;
+	
+	let xUp = evt.touches[0].clientX;
+	let yUp = evt.touches[0].clientY;
+		
+	let xDiff = xDown - xUp;
+	let yDiff = yDown - yUp;
+		
+	if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+		if ( xDiff < 0 ) {
+			mobile_sect_tab_button[0].classList.add('active')
+			mobile_sect_tab_button[1].classList.remove('active')
+
+			mobile_wrap_layouts[0].classList.add('active')
+			mobile_wrap_layouts[1].classList.remove('active')
+		} else {
+			mobile_sect_tab_button[0].classList.remove('active')
+			mobile_sect_tab_button[1].classList.add('active')
+
+			mobile_wrap_layouts[1].classList.add('active')
+			mobile_wrap_layouts[0].classList.remove('active')
+		}
+	}
+
+		xDown = null;
+		yDown = null;
+}
+
 // form
 
 const add_class_error = (element) => {
